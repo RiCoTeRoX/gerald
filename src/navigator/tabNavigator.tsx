@@ -19,20 +19,35 @@ const TabNavigator = () => {
   const isAndroid = useMemo(() => Platform.OS === 'android', [Platform.OS])
   const insets = useSafeAreaInsets()
 
+  const commonTabBarStyle = {
+    bottom: insets.bottom,
+  }
+
+  const androidTabBarStyle = {
+    paddingVertical: 0,
+    paddingBottom: 10,
+    height: 70,
+  }
+  const iosTabBarStyle = {
+    paddingVertical: 10,
+    paddingBottom: 0,
+    height: 50,
+  }
+
+  const tabBarStyle = isAndroid ? { ...androidTabBarStyle } : { ...iosTabBarStyle }
+
   return (
     <SceneAnimated>
       <View style={styles.container}>
         <Tab.Navigator
-          detachInactiveScreens={false} // This is so tabs don't crash on android given certain Fabric behaviours
+          detachInactiveScreens={false}
           screenOptions={{
             lazy: true,
             headerShown: false,
             tabBarHideOnKeyboard: true,
             tabBarStyle: {
-              paddingVertical: isAndroid ? 0 : 10,
-              paddingBottom: isAndroid ? 10 : 0,
-              height: isAndroid ? 70 : 50,
-              bottom: insets.bottom,
+              ...tabBarStyle,
+              ...commonTabBarStyle,
             },
             tabBarActiveTintColor: Colors.RED,
             tabBarInactiveTintColor: Colors.GREEN,
