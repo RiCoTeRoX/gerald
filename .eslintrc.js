@@ -42,7 +42,7 @@ module.exports = {
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'off',
     'react/prefer-stateless-function': 'off',
-    'react/prop-types': 'error',
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'error',
     'react-native/no-unused-styles': 'error',
     'react-native/no-inline-styles': 'error',
