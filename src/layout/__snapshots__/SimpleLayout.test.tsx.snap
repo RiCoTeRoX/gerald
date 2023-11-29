@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleLayout renders correctly 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "maximum",
+      "left": "off",
+      "right": "off",
+      "top": "maximum",
+    }
+  }
+  style={
+    [
+      {
+        "borderRadius": 20,
+        "flex": 1,
+        "paddingHorizontal": 26,
+      },
+      {
+        "backgroundColor": undefined,
+      },
+    ]
+  }
+>
+  <View>
+    <Text>
+      Test
+    </Text>
+  </View>
+</RNCSafeAreaView>
+`;

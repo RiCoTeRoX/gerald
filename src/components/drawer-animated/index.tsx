@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 import { StyleSheet } from 'react-native'
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated'
 
-export const DrawerAnimated = ({ children }: { children: ReactNode }) => {
+const DrawerAnimated = ({ children }: { children: ReactNode }) => {
   const progress = useDrawerProgress()
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 })
+
+export default DrawerAnimated

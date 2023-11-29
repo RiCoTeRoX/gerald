@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerAnimated renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      {
+        "transform": [
+          {
+            "translateY": undefined,
+          },
+        ],
+      },
+    ]
+  }
+>
+  <View>
+    <Text>
+      Test
+    </Text>
+  </View>
+</View>
+`;

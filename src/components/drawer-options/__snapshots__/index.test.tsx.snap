@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerOptions renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#161629",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+        },
+        {
+          "transform": [
+            {
+              "translateY": undefined,
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#161629",
+          "borderTopLeftRadius": 20,
+          "flex": 1,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+</View>
+`;

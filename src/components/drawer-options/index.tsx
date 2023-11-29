@@ -3,7 +3,7 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
 import Colors from '../../constants/Colors'
-import { DrawerAnimated } from '../drawer-animated'
+import DrawerAnimated from '../drawer-animated'
 
 const DrawerOptions = (props: DrawerContentComponentProps) => {
   return (

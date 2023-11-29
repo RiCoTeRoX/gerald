@@ -13,6 +13,11 @@ jest
 
     return Reanimated
   })
+  .mock('@react-navigation/drawer', () => ({
+    useDrawerProgress: jest.fn().mockReturnValue({ value: 0.5 }), // Simulating a value for progress
+    DrawerItemList: jest.fn().mockReturnValue(null),
+    DrawerContentScrollView: jest.fn().mockReturnValue(null),
+  }))
 
   // Silence the warning: Animated: `useNativeDriver` is not supported because the native animated module is missing
   .mock('react-native/Libraries/Animated/NativeAnimatedHelper')

@@ -5,7 +5,7 @@ import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated
 
 import Colors from '../../constants/Colors'
 
-export const SceneAnimated = ({ children }: { children: ReactNode }) => {
+const SceneAnimated = ({ children }: { children: ReactNode }) => {
   const progress = useDrawerProgress()
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -33,3 +33,5 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 })
+
+export default SceneAnimated

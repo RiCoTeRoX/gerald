@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SceneAnimated renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderRadius": 20,
+        "flex": 1,
+      },
+      {
+        "overflow": "hidden",
+        "transform": [
+          {
+            "rotate": "undefineddeg",
+          },
+          {
+            "translateY": undefined,
+          },
+          {
+            "translateX": undefined,
+          },
+        ],
+      },
+    ]
+  }
+>
+  <View>
+    <Text>
+      Test
+    </Text>
+  </View>
+</View>
+`;
